@@ -60,12 +60,14 @@ console.log('isPositive - should say false', isPositive(0));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
+function getLast(array) {
 if (array.length === 0) {
     return undefined;
   }
   return array[array.length - 1];
 }
+console.log(getLast([1, 2, 3, 4])); // Should log 4
+console.log(getLast([])); // Should log undefined
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -78,7 +80,8 @@ function find( value, array ){
   }
   return false;
 }
-
+console.log(find(3, [1, 2, 3, 4])); // Should log true
+console.log(find(5, [1, 2, 3, 4])); // Should log false
 
 // ----------------------
 // Stretch Goals
